@@ -8,8 +8,8 @@ makeCacheMatrix <- function(x = matrix()) {
         x <<- y
         m <<- NULL
     }
-    get <- function() x
-    setinverse <- function(solve) m <<- solve
+    get <- function() {x}
+    setinverse <- function(solve) {m <<- solve}
     getinverse <- function() m
     list(set = set, get = get,
          setinverse = setinverse,
@@ -21,7 +21,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## prior function and return the contents. If not already solved, it will go ahead and 
 ## find the inverse
 
-cacheSolve <- function(x, ...) {
+cacheSolve <- function(x=matrix(), ...) {
         ## Return a matrix that is the inverse of 'x'
     m <- x$getinverse()
     if(!is.null(m)) {
