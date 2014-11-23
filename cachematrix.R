@@ -1,4 +1,6 @@
-## Put comments here that give an overall description of what your
+## This is a combination of functions being delivered for the Coursera R Programming
+## course. It is intended to teach us about lexical scoping and demonstrate caching of 
+## values
 
 ## This function returns the inverse of a matrix and caches it to memory
 
